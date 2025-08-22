@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    color: #f8f8f8;
+    text-align: center;
+    background-color: #001523;
+    font-size: clamp(3rem, 5vw, 4rem);
+    padding: 20px;
+}
+
+
+#section1 {
+    color: #f8f8f8;
+    background-color: lightgray;
+}
+
+.viz{
+    height: auto;
+    width: 100%;
+}
+
+.shape { 
+    transition: 150ms;
+ }
+
+.shape:hover {
+  fill-opacity: 0.5;
+  stroke: black;
+  stroke-width: 1;
+  transform: scale(0.96) rotate(1.5deg);   /* softer tilt */
+  transform-origin: center bottom;         /* pivot from bottom */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hidden { fill-opacity: 0; }
+
+.svg-header {
+  color: #001523;
+  font-family: cursive;
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* makes paragraph text responsive */
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+}
+
+.buttonClass {
+  display: flex;        /* Arrange buttons in a row */
+  flex-wrap: wrap;      /* Allow buttons to move to next line on small screens */
+  gap: 10px;            /* Space between buttons */
+  justify-content: flex-start;  /* Align buttons to the left */
+}
+
+
+button {
+    flex: 1 1 120px;       /* Flexible button width */
+    min-width: 100px;      /* Don't shrink too small */
+    max-width: 200px;      /* Don't grow too big */
+    border: rebeccapurple, 2px solid;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    background-color: #001523;
+    font-size: large;
+    color: whitesmoke;
+    cursor: pointer; 
+}
+
+button:hover{
+    background-color: grey;
+    color: black;
+}
+
+p {
+    color: #001523;
+    font-weight: bold;
+    padding: 10px 0 20px 10px;
+
+}
